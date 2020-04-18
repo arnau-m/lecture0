@@ -82,10 +82,22 @@
           </tr>
           </table>
           <h4>Wich is your favourite one?</h4>
+          <div>
           <form>
-            <input type="text" name="Wich is your favorite one?" placeholder="ex. Shalomon Sight">
+            <input type="text" name="Wich is your favorite one?" list="boards"placeholder="ex. Shalomon Sight">
+            <datalist id="boards">
+              <option value="Salomon Sight">
+              <option value="Jones Mountain Twin">
+              <option value="Bataleon Evil Twin">
+            </datalist>
+            <h4>In wich color would you like it?</h4>
+            <input name="color" type="radio" value="yellow" id="yellow">Yellow
+            <input name="color" type="radio" value="blue" id="blue"> Blue
+            <input name="color" type="radio" value="green" id="green"> Green
+            <input name="color" type="radio" value="other"> Other <br>
             <button>Submit!</button>
           </form>
+        </div>
     </div>
     </body>
 <html>
