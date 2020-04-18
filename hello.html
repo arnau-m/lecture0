@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <style>
       h1{
         color: #2bd9c5;
@@ -11,10 +12,17 @@
         font-weight: bold;
         font-style: oblique;
         border: 3px solid red;}
+        h4{
+          font-size: 20px;
+        }
       body{
-        background: #a6ffb0;
+        background-image: url(https://www.piratesofpowder.com/wp-content/uploads/2016/01/Snowboard-and-Ski-Goggles-Reviews.jpg);
         margin: 30px;
-        font-family: Arial;}
+        border-collapse: collapse;
+        font-family: Arial;
+        background-repeat: no-repeat;
+        background-size: cover;}
+
       table{
         border: 3px solid black;
         border-collapse: collapse;
@@ -22,14 +30,14 @@
       th, td{
         border: 1px solid black;}
       th{
-        background-color: lightgrey;
-        padding: 5px;}
+        background-color:grey;
+        padding: 5px;
+        text-align: center;}
       td{
-        background-color: inherit;
+        background-color: lightgrey;
         padding: 15px;
         text-align: center;}
-      img{
-        width: 50%}
+      img{width: 50%}
     </style>
     <head>
       <title> Hello World</title>
@@ -84,18 +92,25 @@
           <h4>Wich is your favourite one?</h4>
           <div>
           <form>
-            <input type="text" name="Wich is your favorite one?" list="boards"placeholder="ex. Shalomon Sight">
+            <input type="text" name="Wich is your favorite one?" list="boards" placeholder="ex. Shalomon Sight">
             <datalist id="boards">
               <option value="Salomon Sight">
               <option value="Jones Mountain Twin">
               <option value="Bataleon Evil Twin">
             </datalist>
             <h4>In wich color would you like it?</h4>
-            <input name="color" type="radio" value="yellow" id="yellow">Yellow
-            <input name="color" type="radio" value="blue" id="blue"> Blue
-            <input name="color" type="radio" value="green" id="green"> Green
-            <input name="color" type="radio" value="other"> Other <br>
-            <button>Submit!</button>
+              <div id="enquesta">
+                <input type="radio" id="yellow" name="gender" value="yellow">
+                <label for="yellow">Yellow</label><br>
+                <input type="radio" id="green" name="gender" value="green">
+                <label for="green">Green</label><br>
+                <input type="radio" id="blue" name="gender" value="blue">
+                <label for="blue">Blue</label><br>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+              </div>
+            </div>
+            <button type="button" class="btn btn-primary btn-lg">Submit!</button>
           </form>
         </div>
     </div>
